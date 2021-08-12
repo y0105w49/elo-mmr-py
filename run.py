@@ -36,7 +36,7 @@ for f in fs:
 
 lb = []
 for u,h in hists.items():
-    lb.append((h[-1].rating, u))
+    lb.append((h[-1].rating, u, h[-1]))
 lb = sorted(lb, reverse=True)
 pp(lb[::-1])
 
